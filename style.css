@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.espaco{
+    padding: 10px 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    background-image:url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+header{
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    gap: 30px;
+    display: flex;
+}
+nav>a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+main{
+    flex: 1;
+}
+.main-sobre{
+    flex-direction: row;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-radius: 20px;
+}
+.main-sobre > img{
+    border-radius: 20px;
+}
+.text-sobre{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.text-sobre > p{
+    color: white;
+    font-size: 25px;
+}
+.section-table{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+table{
+    border: 2px solid white;
+    margin: auto;
+
+}
+footer{
+    background-color: rgb(55, 55, 55);
+    height: 80px;
+}
