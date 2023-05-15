@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lexend+Deca:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,22 +11,26 @@
 }
 
 .espaco{
-    padding: 10px 30px;
+    padding: 30px 30px;
 }
 
 body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: black;
-    background-image:url(fundo.png);
+    background-image:url(/imgs/fundo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     
 }
-header{
-    height: 60px;
+.nome-menu{
+    font-size: 40px;
     color: white;
+}
+.dev{
+    color:cyan
+}
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -29,29 +39,64 @@ header{
 nav{
     gap: 30px;
     display: flex;
+    align-items: center;
 }
 nav>a{
     color: white;
     text-decoration: none;
-    font-size: large;
+    font-weight:700;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.botao-cv{
+    background-color: #00e1ff91;
+    padding: 10px 10px;
+    border-radius: 10px;
 }
 main{
     flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .main-sobre{
     flex-direction: row;
     display: flex;
     background-color: rgba(0, 0, 0, 0.658);
-    width: 1000px;
-    height: 500px;
-    margin: auto;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 20px;
 }
 .main-sobre > img{
     border-radius: 20px;
 }
+h3{
+    margin: 30px 0 30px;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bolder;
+    color: rgb(5, 5, 5);
+}
+.sobre-mim{
+    background-image: linear-gradient(to bottom, #00e1ff91, #006c7ab6);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top:45px;
+    
+}
+.texto-sobre-mim{
+    padding: 10px 10px;
+    width: 40%;   
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
 .text-sobre{
     text-align: center;
     width: 40%;
@@ -59,25 +104,141 @@ main{
 }
 .text-sobre > p{
     color: white;
-    font-size: 25px;
+    font-size: 22px;
+    font-family: 'Unbounded', cursive;
+
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 30px 0;
 }
 .section-table{
     flex-direction: row;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 500px;
-}
-h1{
-    text-align: center;
-    color: white;
-}
-table{
-    border: 2px solid white;
-    margin: auto;
+    background-color: rgb(0, 0, 0);
+    gap: 15%;
+    padding: 30px;
 
 }
+
+.table-um{
+    border: 2px solid white;
+    color: white;
+    margin-bottom: 40px;
+    width: 560px;
+    display: flex;
+    height: 85%;
+}
+th{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.titulo-table{
+    text-align: center;
+    padding: 0 10px 20px 10px;
+    font-size: 25px;
+}
+.conteudo-table{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20px 20px 20px 20px;
+    
+}
+
+.table-dois{
+    border: 2px solid white;
+    color: white;
+    margin-bottom: 40px;
+    width: 460px;
+    display: flex;
+    height: 60%;
+}
+.projetos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    background-color: black;
+}
+.projeto1, .projeto2, .projeto3{
+    width: 20%;
+    height:300px;
+    background-image: url(imgs/embreve.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.section-form{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+input{
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+}
+textarea{
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.botao-form{
+    display: flex;
+    justify-content: space-around;
+}
+.botao-envia-limpa{
+    width: 45%;
+    background-color:#00e1ff91;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid rgba(77, 77, 77, 0.753);
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+label{
+    font-size: 25px;
+}
+
 footer{
     background-color: rgb(55, 55, 55);
-    height: 80px;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+footer > a{
+    width: 40px;
+    justify-content: center;
+}
+
+footer> a > img{
+    width: 40px;
+}
+footer > p{
+    color: white;
 }

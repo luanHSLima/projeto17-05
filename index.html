@@ -11,71 +11,126 @@
 
 <body>
     <header class="espaco">
-        <h1>LuanDev<>
+        <h1 class="nome-menu">Luan<strong class="dev">Dev</strong>
         </h1>
         <nav>
             <a href="#Sobre">Sobre mim</a>
             <a href="#Experiência">Experiência</a>
             <a href="#Contato">Contato</a>
+            <a href="curriculo/CV - Luan Henrique 2023.docx" class="botao-cv">Download CV</a>
         </nav>
     </header>
 
-    <main class="espaco">
+    <main>
         <section class="main-sobre">
-                <div class="text-sobre">
-                    <p>Olá, me chamo Luan Henrique, tenho 19 anos e estou a 1 ano estudando front end.
-                        Por enquanto não tenho tantos projetos para consulta, mas que tal conhecer um pouco sobre mim ?</p>
-                </div>
-            <img src="boneco.png" alt="" width="500px" height="500px">
+            <div class="text-sobre">
+                <p>Olá, me chamo Luan Henrique, tenho 19 anos e estou a 1 ano estudando front end.
+                    Por enquanto não tenho tantos projetos para consulta, mas que tal conhecer um pouco sobre mim ?</p>
+            </div>
+            <img src="imgs/boneco.png" alt="" width="50%" height="100%">
         </section>
-        <h1>Minhas experiências</h1>
-        <section class="section-table"> 
-            <table>
+
+        <section class="sobre-mim" id="Sobre">
+            <h3> Sobre mim </h3>
+            <div class="texto-sobre-mim">
+                <p>Olá, meu nome é Luan Henrique e tenho 19 anos. Estou em busca do meu primeiro emprego na área de
+                    desenvolvimento e gostaria de compartilhar um pouco sobre mim e minhas habilidades <br> </p>
+                <p>Desde pequeno, sempre fui fascinado por tecnologia e tudo relacionado a computadores. Por isso,
+                    decidi me aprofundar no assunto e comecei a estudar programação por conta própria.</p> <br>
+                <p>Dediquei muitas horas ao aprendizado de linguagens de programação como Java, Linguagem C, HTML e CSS,
+                    além de ter participado de alguns cursos online.</p><br>
+                <p>Além disso, sou uma pessoa bastante organizada, responsável e comprometida com os meus objetivos.
+                    Acredito que essas características serão muito úteis em um ambiente de trabalho, especialmente na
+                    área de desenvolvimento que exige muita disciplina e foco.</p>
+            </div>
+        </section>
+        <h2>Minhas experiências</h2>
+        <section class="section-table" id="Experiência">
+            <table class="table-um">
                 <tr>
-                    <th>Zinc Metais</td>
-                    <th></td>
+                    <th colspan="2">Zinc Metais</th>
+                    <th></th>
                 </tr>
-                
+
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td class="titulo-table">Função</td>
+                    <td class="conteudo-table">Aprendiz Administrativo</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td class="titulo-table">Atividades</td>
+                    <td class="conteudo-table">Romaneios e separações de materias por planilhas(entrada/saída); <br>
+                        Arquivo e organização de documentos em geral; <br>
+                        Controle e entrega de EPIs; <br>
+                        Contagem e elaboração de requisições de suprimentos; e <br>
+                        Controle de dados de produção por planilhas.</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td class="titulo-table">Periodo</td>
+                    <td class="conteudo-table">1 ano</td>
                 </tr>
             </table>
 
-            <table>
+            <table class="table-dois">
                 <tr>
-                    <th></td>
-                    <th>JRL Apoio administrativo</td>
+                    <th colspan="2">JRL Apoio administrativo</th>
+                    <th></th>
                 </tr>
-                
+
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td>Função</td>
+                    <td>Analista de Suporte</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td>Atividades</td>
+                    <td>Implementação de hardwares e softwares; <br>
+                        Manutenção e montagem de computadores; <br>
+                        Suporte direto aos funcionários;</td>
+                </tr>
+                <tr>
+                    <td>Periodo</td>
+                    <td>1 ano e contando...</td>
                 </tr>
             </table>
+        </section>
+        <h2>Meus projetos</h2>
+        <div class="projetos">
+            <div class="projeto1 1"></div>
+            <div class="projeto2 2"></div>
+            <div class="projeto3 3"></div>
+        </div>
+        <section class="section-form" id="Contato">
+            <form action="" method="POST">
+                <h3> Me envie uma mensagem!</h3>
 
+                <label for="">Nome</label>
+                <input type="text" name="" id="" placeholder="Insira seu nome aqui..." required>
+
+                <label for="">Email</label>
+                <input type="email" placeholder="Insira seu e-mail aqui..." required>
+
+                <label for="">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descreva sua mensagem"></textarea required>
+
+                <div class="botao-form">
+                    <input class="botao-envia-limpa" type="submit" value="ENVIAR">
+                    <input class="botao-envia-limpa" type="reset" value="LIMPAR">
+                </div>
+            </form>
 
         </section>
     </main>
 
     <footer>
-        c
+        <a href="https://www.linkedin.com/in/meuperfilluanh" target="_blank">
+            <img src="imgs/icones/linkedin.png" alt=""></a>
+
+        <a href="https://github.com/luanHSLima" target="_blank">
+            <img src="imgs/icones/github.png" alt=""></a>
+
+        <a href="https://wa.me/5511963989297" target="_blank">
+            <img src="imgs/icones/whatsapp.png" alt=""></a>
+
+        <p> &copy Direitos autorais reservados 2023 - Luan Henrique<br></p>
     </footer>
 
 </body>
